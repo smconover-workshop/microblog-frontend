@@ -5,6 +5,7 @@ export const Flags = {
   title: new Rox.Flag(false)
 };
 
+
 export const configurationFetchedHandler = fetcherResults => {
   console.log('The configuration status is: ' + fetcherResults.fetcherStatus)
   if (fetcherResults.hasChanges && fetcherResults.fetcherStatus === 'APPLIED_FROM_NETWORK') {
